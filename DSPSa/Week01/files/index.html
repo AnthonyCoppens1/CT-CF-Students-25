@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <!--our own class in head-->
+        <style>
+            .xyz{
+                border:20px outset black;
+                background-color: darkorange;
+                text-align: center;
+            }
+
+            footer{
+                text-align: center;
+                padding: 5px;
+                background-color: midnightblue;
+                color: pink;
+            }
+            
+        </style>
+        <title>Title of the page</title>
+    </head>
+    <body style="background-color: yellow;" class="bodyclass">
+        <div class="xyz">
+            <h2>Heading with the style of xyz</h2>
+            <p>random text</p>
+        </div>
+
+        <a href="#test">Test</a><br><br>
+        This is content on the page.
+        <p>This is a paragraph</p>
+        <p>This is another one</p>
+        <p>AND ONE MORE</p>
+
+        <h1>This is header 1</h1>
+        <h2>This is a little smaller header</h2>
+        <h3>This is header3</h3>
+
+        This is text<br /> <!--<br /> is opening up a new line, or <br> does the same-->
+        <br>Another line of text<br>
+
+        lots of spaces and a horizontal line. <hr />
+        another way of crea&nbsp;ting a space.<br>
+
+        <!--THIS IS HOW YOU WRITE COMMENTS-->
+        
+        <p>
+            <b>This text is bold</b><br>
+            <i>This is italic</i><br>
+            <u>Putting a line under this text</u><br>
+            <b><u><i>This text has EVERYTHING</i></u></b><br>
+        </p>
+
+        <strong>This is also bold</strong><br>
+        <em>This is also italic</em><br>
+
+        <!--Linking to different pages -> hyperlinks-->
+        <!--link to different files and using target="_blank"-->
+        <a href="text.html" target="_blank">Click here!</a> To open a different file
+        in the directory<br>
+        <a href="club.jpg" target="_blank">Click here</a> to open the specific image<br>
+        
+        <!--mailing to somebody through a hyperlink-->
+        <a href="mailto:anthony.coppens@thomasmore.be">mail me!</a><br>
+
+        <!-- open different webpages -->
+        <a href="https://thomasmore.be/nl">TM WEBPAGE</a>
+
+
+        <!--Targetting to another element in the same page
+        Btw if you want to do multiple lines in comments
+        you can!!!-->
+
+        <h4>
+            <a id="test">TEST</a>
+        </h4><br> This is the segment we navigated to!<br>
+
+        <!--IMAGES-->        
+        <img src="club.jpg" alt="club"><br> <!--make sure the image is reachable
+        if not, the img will show the alt text-->
+
+        <!-- best thing is to group your images -->
+        <img src="images/jpg/club.jpg" alt="club1">
+        <img src="images/png/extreme.png" alt="extreme">
+        <img src="images/jpg/ronaldo.jpg" alt="siuuu"><br>
+
+        <!--if a file is one level further down and you need to navigate back
+        a folder, ../ will make you go back one file at a time!-->
+
+        <img src="../images/jpg/ronaldo.jpg" alt="ronaldo" height="50%" width="50%">
+        <!--if you wanna adjust height and width, this is how you do it/ also works
+        with pixels -> 10px / 20px -->
+
+        <!--AUDIO-->
+        <audio controls>
+            <source src="../media/nokia.mp3" type="audio/mp3">
+            however be careful, browser might not support certain audio elements
+            OGG is also a possible audio extension!
+        </audio>
+
+        <!--Video-->
+        <video controls>
+            <source src="../media/cats.mp4" type="video/mp4">
+            Careful browser might not support
+        </video>
+
+        <!--Creating tables-->
+        <!--UNORDERED LISTS -> ul- tag-->
+        <ul>
+            <li>first item</li>
+            <li>second item</li>
+            <li>third item</li>
+        </ul>
+
+        <!--ORDERED LISTS -> ol- tag-->
+        <ol>
+            <li>first item</li>
+            <li>second item</li>
+            <li>third item</li>
+        </ol>
+
+        <!--OL possibilities: 1 a A i I-->
+        <ol type="i">
+            <li>first item</li>
+            <li>second item</li>
+            <li>third item</li>
+        </ol>
+
+        <!--UL possibilities: disc square circle-->
+        <ul type="square">
+            <li>first item</li>
+            <li>second item</li>
+            <li>third item</li>
+        </ul>   
+        
+        
+        <!--nesting lists-->
+        <ul type="circle">
+            <li>1st item
+                <ul type="disc">
+                    <li>Item 1.1</li>
+                    <li>Item 1.2</li>
+                    <li>Item 1.3</li>
+                </ul>
+            </li>
+            <li>2nd item</li>
+            <li>3rd item</li>
+        </ul>
+
+
+        <!--TABLES: tr = table row, td = table column, th = tablme header-->
+
+        <table border="5">
+            <tr>
+                <td>first row, first column</td>
+                <td>first row, second column</td>
+            </tr>
+            <tr>
+                <td>second row, first column</td>
+                <td>second row, second column</td>
+            </tr>
+        </table> 
+        <br>
+        <!--table with headers-->
+        <table border="1">
+            <tr>
+                <th>Name</th>
+                <th>Age</th>
+            </tr>
+            <tr>
+                <td>Anthony</td>
+                <td>30</td>
+            </tr>
+            <tr>
+                <td>Alvaro</td>
+                <td>20</td>
+            </tr>
+            <tr>
+                <td>Denys</td>
+                <td>19</td>
+            </tr>
+            <tr>
+                <td>Ondrej</td>
+                <td>21</td>
+            </tr>
+            <tr>
+                <td>Kristian</td>
+                <td>20</td>
+            </tr>
+            <tr>
+                <td>Alexandros</td>
+                <td>33</td>
+            </tr>
+        </table>     
+        <br>
+        <!--cellpadding vs cellspacing-->
+        <!--room between text and inner edge-->
+        <table border="1" cellpadding="10">
+            <tr>
+                <td>A lot of space</td>
+            </tr>
+        </table><br>
+
+        <!--room between both outer edges-->
+        <table border="1" cellspacing="10">
+            <tr>
+                <td>There is no space</td>
+            </tr>
+        </table><br>
+
+        <!--merging ROWS-->
+        <table border="1">
+            <tr>
+                <td>1st row, 1st col</td>
+                <td rowspan="2">2nd col</td>
+            </tr>
+            <tr>
+                <td>2nd row, 1st col</td>
+            </tr>
+        </table><br>
+
+
+        <!--merging COLUMNS-->
+        <table border="1">
+            <tr>
+                <td>first row, first col</td>
+                <td>first row, second col</td>
+            </tr>
+            <tr>
+                <td colspan="2">second row</td>
+            </tr>
+        </table><br>
+
+
+        <!--container elements -> used to group elements, they start on a new line-->
+        <!--it really is just like a container on your page-->
+        <div style="background-color:salmon; color: black; padding: 2;">
+            <h2>CATS</h2>
+            <p>Some information about cats would be useful to have here.<br>
+                Some people might get allergic to them, who knows, nobody does where<br>
+                it comes from.
+            </p>
+        </div>
+
+        <!--other container elements to look at-->
+        <h1 style="background-color: aqua; color: brown;">Heading x</h1>
+        <p>This is random text</p>
+
+        <!--if you want to format a footer, usually done in HEAD-->
+        <!--careful, if you do inline styling, it is applied last and it loses the features
+        from styling (internal) in the head!-->
+        <footer style="background-color: blueviolet;">
+            <p>Author: Anthony</p>
+            <p><a href="mailto:anthony.coppens@thomasmore.be">anthony.coppens@thomasmore.be</a></p>
+        </footer>  
+
+        <footer>
+            <p>TEST</p>
+        </footer>
+
+
+    </body>
+</html>
