@@ -2,8 +2,39 @@
 <html>
     <head>
         <title>This is the title of this page</title>
+        <!--intenal styling-->
+        <style>
+            a{
+                text-align: center;
+                color:cyan;
+                background-color: darkolivegreen;
+                padding: 5px;
+            }
+
+            .xyz{
+                text-align: center;
+                color: beige;
+                background-color: black;
+            }
+
+            
+        </style>
+
     </head>
     <body style="background-color: purple; color: turquoise;">
+        
+        <!--normally this goes at the end of week 1, but put here for convenience-->
+        <!--CONTAINER ELEMENTS-->
+    
+        <div style="background-color: aliceblue; color: blueviolet;">
+            <h2>Fries</h2>
+            <p style="background-color: cornsilk;">Belgian fries are considered not the same as French fries. Most people think they were invented
+                in France, but actually it was a town in Wallonia. Without people realizing, we do have the
+                very best fries you can sometimes think of.
+            </p>
+        </div>
+
+
         <!--Target something else on this webpage-->
         <a href="#downstairs">Downstairs</a>
 
@@ -17,9 +48,11 @@
         <p>This is also a paragraph</p>
         <p>AND YET ANOTHER</p>
 
-        <h1>This is header 1</h1>
+        <h1 class="xyz">This is header 1</h1>
         <h2>number 2</h2>
-        <h3>This is the third one</h3>
+        
+        <!--span tag by itself does nothing, if you want to add flair to text, but not all, use it like below.-->
+        <h3>This is the <span style="color: crimson;">third</span> one</h3>
 
         <!--<br> opens up a new line-->
         This is more text<br>and this part appears on the next line<br>
@@ -54,9 +87,149 @@
         <img src="images/pizza.jpg" alt="pizza" height="50%" width="50%">
         <!--alt holds replacement text for image if it doesn't load-->
         <!--the good images-->
-        <img src="../images/jpg/pizza.jpg" alt="pizza">
-        <img src="../images/jpg/creamysoup.jpg" alt="pizza">
-        <img src="../images/png/piggy.png" alt="pizza">
+        <img src="../images/jpg/pizza.jpg" alt="pizza" height="25%" width="25%"><br> <!-- ../ makes your pc navigate one folder back-->
+        <br><img src="../images/jpg/creamysoup.jpg" alt="pizza">
+        <br><img src="../images/png/piggy.png" alt="pizza" height="250px" width="2500px">
+
+        <br>
+        <!--audio files-->
+        <audio controls>
+            <source src="../media/lizard.mp3" type="audio/mp3">
+        </audio><br>
+
+        <!--video files-->
+        <video controls>
+            <source src="../media/cooking.mp4" type="video/mp4">
+        </video>
+
+        <!--creating lists on html-->
+        <!--two variants: unordered list and a ordered list-->
+        <!--unordered list -> ul-->
+        <ul>
+            <li>first item</li>
+            <li>second item</li>
+            <li>third item</li>
+        </ul>
+
+        <!--ordered list -> ol-->
+        <ol>
+            <li>first item</li>
+            <li>second item</li>
+            <li>third item</li>
+        </ol>
+
+        <!--ol possibilities -> 1 a A i I-->
+        <ol type="i">
+            <li>first item</li>
+            <li>second item</li>
+            <li>third item</li>
+            <li>fourth item</li>
+        </ol>
+
+        <!--ul possibilities: disc square circle-->
+        <ul type="square">
+            <li>first item</li>
+            <li>second item</li>
+            <li>third item</li>
+            <li>fourth item</li>
+        </ul>
+
+        <!--nesting lists-->
+        <ul type="circle">
+            <li>1st item
+                <ul type="disc">
+                    <li>Item 1.1</li>
+                    <li>Item 1.2</li>                    
+                    <li>Item 1.3</li>
+                </ul>
+            </li>
+            <li>2nd item</li>
+            <li>3rd item</li>
+
+        </ul>
+
+
+        <table border="1">
+            <tr>
+                <td>first row, first col</td>
+                <td>first row, second col</td>
+            </tr>
+            <tr>
+                <td>second row, first col</td>
+                <td>second row, second col</td>
+            </tr>
+        </table>
+
+        <table border="10">
+            <tr>
+                <th>Dish</th>
+                <th>Country</th>
+            </tr>
+            <tr>
+                <td>Chocolate and beer</td>
+                <td>Belgium</td>
+            </tr>
+            <tr>
+                <td>Pizza</td>
+                <td>Italy</td>
+            </tr>
+            <tr>
+                <td>Pho</td>
+                <td>Vietnam</td>
+            </tr>
+            <tr>
+                <td>Kebab</td>
+                <td>Turkiye</td>
+            </tr>
+            <tr>
+                <td>Mamaliga</td>
+                <td>Moldova</td>
+            </tr>
+        </table>
+
+
+        <!--difference between cellspacing and cellpadding-->
+        <table border="1" cellpadding="15">
+            <tr>
+                <td>A lot of space</td>
+            </tr>
+        </table>
+
+        <table border="1" cellspacing="15">
+            <tr>
+                <td>NO space whatsoever</td>
+            </tr>
+        </table>
+
+
+        <!--merging -> merging rows-->
+        <table border="1">
+            <tr>
+                <td>1st row, 1st col</td>
+                <td rowspan="2">2nd col</td>
+            </tr>
+            <tr>
+                <td>2nd row, 1st col</td>
+            </tr>
+        </table>
+
+        <!--merging -> merging cols-->
+        <table border="1">
+            <tr>
+                <td>first row, first col</td>
+                <td>first row, second col</td>
+            </tr>
+            <tr>
+                <td colspan="2">second row</td>
+            </tr>
+        </table>
+
+        <!--Iframes, a webpage inside of a webpage-->
+        <!--careful, could happen that access is denied!-->
+        <iframe src="https://www.google.com/maps"></iframe>
+        <iframe src="https://www.windows93.net/"></iframe>
+
+
 
 
     </body>
