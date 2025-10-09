@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>This is the title of this page</title>
+
+        <!--intenal styling-->
+        <style>
+            a{
+                text-align: center;
+                color:cyan;
+                background-color: darkolivegreen;
+                padding: 5px;
+            }
+
+            .xyz{
+                text-align: center;
+                color: beige;
+                background-color: black;
+            }
+
+            
+        </style>
+
+    </head>
+    <body style="background-color: purple; color: turquoise;">
+
+        <!-- if you want to have a size scale of your screen, vw is viewport-->
+        <!--1 vw = 1% of your screen, so if it's 50cm, 1 vw is 0.5cm-->
+        <h1 style="font-size: 10vw;">Hello World!</h1>
+
+        
+        <!--normally this goes at the end of week 1, but put here for convenience-->
+        <!--CONTAINER ELEMENTS-->
+    
+        <div style="background-color: aliceblue; color: blueviolet;">
+            <h2>Fries</h2>
+            <p style="background-color: cornsilk;">Belgian fries are considered not the same as French fries. Most people think they were invented
+                in France, but actually it was a town in Wallonia. Without people realizing, we do have the
+                very best fries you can sometimes think of.
+            </p>
+        </div>
+
+
+        <!--Target something else on this webpage-->
+        <a href="#downstairs">Downstairs</a>
+
+        <!--Whatever I write in between here
+        Is comments and not taken into account when running html
+        can be done over multiple lines-->
+
+        Some text<br>
+        Making a change<br>
+        <p>This is a paragraph</p>
+        <p>This is also a paragraph</p>
+        <p>AND YET ANOTHER</p>
+
+        <h1 class="xyz">This is header 1</h1>
+        <h2>number 2</h2>
+        
+        <!--span tag by itself does nothing, if you want to add flair to text, but not all, use it like below.-->
+        <h3>This is the <span style="color: crimson;">third</span> one</h3>
+
+        <!--<br> opens up a new line-->
+        This is more text<br>and this part appears on the next line<br>
+
+        <p>
+            <h1>TESTCASE</h1>
+            <b>This is bold</b><br>
+            <i>This is italic text</i><br>
+            <u>underlined text</u><br>
+            <b><u><i>This text is the ultimate form of all adaptations</i></u></b>
+        </p>
+
+        <!--Another way of writing spaces-->
+        Just some text and&nbsp;it stops at one point<br>
+
+
+        <!--HYPERLINKS AND WHAT YOU CAN DO WITH THEM-->
+        <!--linking to different files-->
+        <!--target="_blank" opens the file or whatever in a new tab-->
+        <a href="text.html" target="_blank">Needs text to be able to click on this</a><br>
+        <a href="pizza.jpg" target="_blank">Click here for tasty pizza</a><br>
+        <a href="mailto:anthony.coppens@thomasmore.be">mail me!</a><br>
+        
+        <!--opening up a different website-->
+        <a href="https://thomasmore.be" target="_blank">Click here!</a><br>
+        <h4>
+            <a id="downstairs">Downstairs</a>
+        </h4>This is the segment we went to<br>
+
+        <!--Images-->
+        <!--can also do pixels-->
+        <img src="images/pizza.jpg" alt="pizza" height="50%" width="50%">
+        <!--alt holds replacement text for image if it doesn't load-->
+        <!--the good images-->
+        <img src="../images/jpg/pizza.jpg" alt="pizza" height="25%" width="25%"><br> <!-- ../ makes your pc navigate one folder back-->
+        <br><img src="../images/jpg/creamysoup.jpg" alt="pizza">
+        <br><img src="../images/png/piggy.png" alt="pizza" height="250px" width="2500px">
+
+        <br>
+        <!--audio files-->
+        <audio controls>
+            <source src="../media/lizard.mp3" type="audio/mp3">
+        </audio><br>
+
+        <!--video files-->
+        <video controls>
+            <source src="../media/cooking.mp4" type="video/mp4">
+        </video>
+
+        <!--creating lists on html-->
+        <!--two variants: unordered list and a ordered list-->
+        <!--unordered list -> ul-->
+        <ul>
+            <li>first item</li>
+            <li>second item</li>
+            <li>third item</li>
+        </ul>
+
+        <!--ordered list -> ol-->
+        <ol>
+            <li>first item</li>
+            <li>second item</li>
+            <li>third item</li>
+        </ol>
+
+        <!--ol possibilities -> 1 a A i I-->
+        <ol type="i">
+            <li>first item</li>
+            <li>second item</li>
+            <li>third item</li>
+            <li>fourth item</li>
+        </ol>
+
+        <!--ul possibilities: disc square circle-->
+        <ul type="square">
+            <li>first item</li>
+            <li>second item</li>
+            <li>third item</li>
+            <li>fourth item</li>
+        </ul>
+
+        <!--nesting lists-->
+        <ul type="circle">
+            <li>1st item
+                <ul type="disc">
+                    <li>Item 1.1</li>
+                    <li>Item 1.2</li>                    
+                    <li>Item 1.3</li>
+                </ul>
+            </li>
+            <li>2nd item</li>
+            <li>3rd item</li>
+
+        </ul>
+
+
+        <table border="1">
+            <tr>
+                <td>first row, first col</td>
+                <td>first row, second col</td>
+            </tr>
+            <tr>
+                <td>second row, first col</td>
+                <td>second row, second col</td>
+            </tr>
+        </table>
+
+        <table border="10">
+            <tr>
+                <th>Dish</th>
+                <th>Country</th>
+            </tr>
+            <tr>
+                <td>Chocolate and beer</td>
+                <td>Belgium</td>
+            </tr>
+            <tr>
+                <td>Pizza</td>
+                <td>Italy</td>
+            </tr>
+            <tr>
+                <td>Pho</td>
+                <td>Vietnam</td>
+            </tr>
+            <tr>
+                <td>Kebab</td>
+                <td>Turkiye</td>
+            </tr>
+            <tr>
+                <td>Mamaliga</td>
+                <td>Moldova</td>
+            </tr>
+        </table>
+
+
+        <!--difference between cellspacing and cellpadding-->
+        <table border="1" cellpadding="15">
+            <tr>
+                <td>A lot of space</td>
+            </tr>
+        </table>
+
+        <table border="1" cellspacing="15">
+            <tr>
+                <td>NO space whatsoever</td>
+            </tr>
+        </table>
+
+
+        <!--merging -> merging rows-->
+        <table border="1">
+            <tr>
+                <td>1st row, 1st col</td>
+                <td rowspan="2">2nd col</td>
+            </tr>
+            <tr>
+                <td>2nd row, 1st col</td>
+            </tr>
+        </table>
+
+        <!--merging -> merging cols-->
+        <table border="1">
+            <tr>
+                <td>first row, first col</td>
+                <td>first row, second col</td>
+            </tr>
+            <tr>
+                <td colspan="2">second row</td>
+            </tr>
+        </table>
+
+        <!--Iframes, a webpage inside of a webpage-->
+        <!--careful, could happen that access is denied!-->
+        <iframe src="https://www.google.com/maps"></iframe>
+        <iframe src="https://www.windows93.net/"></iframe>
+
+        <br><br>
+        <!--FORMS-->
+        <form method="post" action="">
+            <input type="text" name="Name"><br>
+            <input type="password" name="¨Password"><br>
+            <input type="submit" value="Submit">
+        </form>
+
+        <!--choice rounds-->
+        <form>
+            <input type="radio" name="Country" value="Belgium">Belgium<br>
+            <input type="radio" name="Country" value="France">France<br>
+            <input type="radio" name="Country" value="Germany">Germany<br>
+            <input type="radio" name="Country" value="Italy">Italy<br>
+            <input type="radio" name="Country" value="Croatia" checked>Croatia<br>            
+        </form>
+
+        <form>
+            textfield:<br>
+            <input type="text" name="text" size="40"><br>
+            textarea:<br>
+            <textarea rows="3" cols="30" name="txtarea">default text in my area</textarea><br>
+            checkmarks:<br>
+            <input type="checkbox" name="check" value="c1">choice 1<br>
+            <input type="checkbox" name="check" value="c2">choice 2<br>
+            <input type="checkbox" name="check" value="c3" checked>choice 3<br>
+
+            dropdownlist:<br>
+            <select name="ddl">
+                <option>option1</option>
+                <option>option2</option>
+                <option>option3</option>
+                <option>option4</option>
+                <option>option5</option>
+            </select>
+
+            <button type="button" onclick="alert('Hello World!')">Click me!!!</button>
+
+        </form>
+
+    </body>
+</html>
