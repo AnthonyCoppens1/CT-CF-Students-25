@@ -1,0 +1,38 @@
+body{
+    background-color: cadetblue;
+    border:red;
+    background-image: url("../afbeeldingen/png/perry.png");
+    background-repeat: no-repeat;
+
+    background: linear-gradient(cadetblue, red);
+}
+
+p{
+    color:rgba(0, 0, 255, 0.446);
+    background-color: beige;
+    font-weight: bold;
+    border-style: dotted;
+    border-color: darkolivegreen;
+    border-width: 5px;
+    border-radius: 10px;
+}
+
+/*Meerdere elementen samen groeperen en dezelfde opmaak geven, werkt ook in html in head -> style tag*/
+h1, h2, h3, h4, h5, h6{
+    color: crimson;
+    background-color: green;
+}
+
+a:link, a:visited{
+    color: green;
+}
+
+a:hover{
+    color:beige;
+    background-color: rgba(0, 0, 0, 0.262);
+}
+
+a:active{
+    color:aqua;
+}
+

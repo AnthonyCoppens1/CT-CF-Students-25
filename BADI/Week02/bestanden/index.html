@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link href="opmaak.css" type="text/css" rel="stylesheet">
+        <title>Titel van de pagina</title>
+        <style>
+            
+            footer{
+                text-align: center;
+                padding: 5px;
+                background-color: limegreen;
+                color:blue;
+            }
+            p{
+                text-align: left;
+                background-color: salmon;
+                font-family: sans-serif;
+            }
+
+            p.winter{
+                background-color: rgba(0, 0, 139, 0.398);
+            }
+
+            p#herfst{
+                color: crimson;
+            }
+
+            p#zomer{
+                color: yellow;
+            }
+            
+            .xyz{
+                background-color: black;
+                color: white;
+            }
+        </style>
+    </head>
+    <body style="color: white;" class="bodyclass">
+        <a href="#vogelbekdier">Vogelbekdier</a>
+
+        <p id="herfst">herfst</p>
+        <p class="winter">winter</p>
+        <p>lente</p>
+        <p id="zomer">zomer</p>
+
+
+        <!--vw = viewport, inzoomen of outzoomen maakt niet uit, blijft % van scherm -> 1 vw van 50cm = 0.5cm-->
+        <h1 style="font-size: 10vw;">Hello World!</h1>
+
+
+        <div class="xyz">
+            <h2>Titel met heel veel stijl!</h2>
+        </div>
+
+        Een stukje tekst.<br>
+        meer tekst
+
+        <p class="xyz">Dit is een paragraaf</p>
+        <p>Dit is er nog een</p>
+        <p style="text-shadow: 3px 2px black; letter-spacing: 5px;">NOG EEN ALLERLAATSTE</p>
+
+        <!--IFRAMES -> webpagina in een webpagina-->
+        <iframe src="http://www.windows93.net"></iframe>
+
+
+
+
+
+        <h1>Dit is de grootste titel</h1>
+        <h2>Dit is header 2</h2>
+        <h3>Dit is een laatste titel</h3>
+        
+        <!--Dit is commentaar
+        en ik kan dit over meerdere regels laten gaan-->
+        <!--stel ik wil een nieuwe regel starten -> <br> en vroeger was dit <br />-->
+        Stuk tekst<br><br><br>
+        Deze tekst staat 2 regels lager dan de vorige!<br>
+
+        <!--INLINE ELEMENTS -> dingen toepassen op elementen-->
+        <p>Dit is gekleurde <span style="color: lightblue;">tekst</span> waarin ik een bepaald woord een kleur wil geven!</p>
+
+        <p style="background-color: cornflowerblue;">
+            <b>Deze tekst staat in het vet</b><br>
+            <i>Deze tekst staat schuingedrukt</i><br>
+            <u>Deze is onderlijnt</u><br>
+            <b><i><u>Deze tekst heeft ALLES</u></i></b>
+        </p>
+
+        <!--andere manieren om tekst vet te zetten of schuingedrukt-->
+        <strong>OOK VET</strong><br>
+        <em>Dit is ook schuingedrukt</em><br>
+
+        <!-- &nbsp; is ook een manier om spaties te typen-->
+        Stel ik heb hier tekst en ik wil &nbsp;spatie extra toevoegen aan een woord.<br>
+
+        <!--hyperlinks en hoe ze werken-->
+        <!-- target="_blank" zorgt er voor dat hyperlink in nieuw tabblad opent-->
+        <a href="text.html" target="_blank">Klik hier om naar een ander bestand te gaan</a> 
+        maar hier kan ik niet klikken.
+
+        <br><a href="vogelbekdier.jpg" target="_blank">Klik voor VOGELVERRASSING</a>
+
+        <!--mailen naar iemand-->
+        <br><a href="mailto:anthony.coppens@thomasmore.be">anthony.coppens@thomasmore.be</a>
+        
+        <!--website openen-->
+        <br><a href="https://google.com/" target="_blank">Klik om naar google te gaan</a>
+
+        <!--verplaatsen binnen website naar specifiek gedeelte // ZIE EERSTE REGEL VOOR LINK-->
+        <h4>
+            <a id="vogelbekdier">Vogelbekdier</a>
+        </h4>
+
+
+        <!--afbeeldingen-->
+        <img src="vogelbekdier.jpg" alt="vogelbekdier"><br>
+        <!-- alt zorgt voor tekst als afbeelding of media niet te bereiken is-->
+        <img src="../afbeeldingen/jpg/vogelbekdier.jpg"><br>
+        <img src="../afbeeldingen/png/perry.png" height="50%" width="50%"><br> <!--je kan ook ...px gebruiken-->
+
+        <!--per keer dat je ../ gebruikt in een bestandsnaam, ga je 1 map terug navigeren!-->
+
+        <!--audio-->
+        <audio controls>
+            <source src="../media/mp3/vogelbekgeluid.mp3" type="audio/mpeg"> <!-- ogg is ook een mogelijk audiobestand-->
+        </audio>
+        <br>
+        <!--video-->
+        <video controls height="50%" width="50%">
+            <source src="../media/mp4/kameel.mp4" type="video/mp4">
+        </video>
+        <br>
+
+        <!--lijsten aanmaken op 2 manieren-->
+        <!-- unordered list -> ul-tag-->
+        <ul>
+            <li>eerste item</li>
+            <li>tweede item</li>
+            <li>derde item</li>
+        </ul>
+
+        <!-- ordered list -> ol-tag-->
+        <ol>
+            <li>eerste item</li>
+            <li>tweede item</li>
+            <li>derde item</li>
+        </ol>
+        
+        <!--mogelijkheden voor ol -> 1 a A i I-->
+        <ol type="i">
+            <li>eerste deel</li>
+            <li>tweede deel</li>
+            <li>derde deel</li>
+        </ol>
+
+        <!--mogelijkheden voor ul -> disc square cicle-->
+        <ul type="square">
+            <li>eerste deel</li>
+            <li>tweede deel</li>
+            <li>derde deel</li>
+        </ul>
+
+        <!--lists nesten-->
+        <ul type="circle">
+            <li>1e item
+                <ul type="disc">
+                    <li>Item 1.1</li>
+                    <li>Item 1.2</li>
+                    <li>Item 1.3</li>
+                </ul>
+            </li>
+            <li>2e item</li>
+            <li>3e item</li>
+        </ul>
+
+
+        <!--Tabellen: tr = table rij / td = table kolom / th = table header-->
+        <table border="1">
+            <tr>
+                <td>eerste rij, eerste kolom</td>
+                <td>eerste rij, tweede kolom</td>
+            </tr>
+            <tr>
+                <td>tweede rij, eerste kolom</td>
+                <td>tweede rij, tweede kolom</td>
+            </tr>
+        </table>
+
+        <!--TH toevoegen -> voor titel in tabel-->
+        <table border="10">
+            <tr>
+                <th>Naam huisdier</th>
+                <th>Leeftijd</th>
+            </tr>
+            <tr>
+                <td>Peter</td>
+                <td>15</td>
+            </tr>
+            <tr>
+                <td>Perry</td>
+                <td>5</td>
+            </tr>
+        </table>
+
+        <!--verschil cellpadding vs cellspacing-->
+        <table border="1" cellpadding="10">
+            <tr>
+                <td>HEEL VEEL RUIMTE</td>
+            </tr>
+        </table>
+
+        <table border="1" cellspacing="10">
+            <tr>
+                <td>AMPER RUIMTE</td>
+            </tr>
+        </table>
+
+        <!--kolommen of rijen samenvoegen-->
+        <!--rijen-->
+        <table border="1">
+            <tr>
+                <td>1e rij, 1e kol</td>
+                <td rowspan="2">2e kolom</td>
+            </tr>
+            <tr>
+                <td>2e rij, 1e kol</td>
+            </tr>
+        </table>
+
+        <!--kolom-->
+        <table border="1">
+            <tr>
+                <td>1e rij, 1e kol</td>
+                <td>1e rij, 2e kol</td>
+            </tr>
+            <tr>
+                <td colspan="2">2e rij</td>
+            </tr>
+        </table>
+
+        <!--CONTAINER ELEMENTEN
+        elementen die een nieuwe lijn starten en lopen van volledig links naar volledig rechts op de pagina
+        DIV -> vaak gebruikt voor groeperen van elementen!-->
+        <div style="background-color: black; color: cyan; padding-left: 50px;">
+            <h2>VOGELBEKDIER</h2>
+            <p>Een vogelbekdier is een organisme dat op land en water kan overleven. 
+                Het is ook wel gekenmerkt aan zijn grote snavel of bek. Meer info heeft 
+                Romeo eigenlijk niet, het is maar een random topic dat hij koos. Eerst wou hij dino's.</p>
+    
+        </div>
+
+        <!--andere containelementen-->
+        <!--enkele voorbeelden:-->
+        <h1>Heading 1</h1>
+        <p>Random tekst</p>
+
+        <!--FORMS-->
+
+        <form method="post" action="">
+            Naam: <input type="text" name="Naam"><br>
+            Pwoord: <input type="password" name="Paswoord"><br>
+            <input type="submit" value="Submit">
+        </form>
+        <br>
+        <!--keuzerondjes-->
+        <form>
+            <input type="radio" name="FavoEten" value="Spaghetti" >Spaghetti<br>
+            <input type="radio" name="FavoEten" value="Lasagne">Lasagne<br>
+            <input type="radio" name="FavoEten" value="Steak met friet">Steak met friet<br>
+            <input type="radio" name="FavoEten" value="Sushi" checked>Calfornia rolls<br>        
+        </form>
+        <br>
+        
+        <form>
+            tekstveld: <input type="text" name="text" size="40"><br>
+            vinkjes:<br> <input type="checkbox" name="check" value="k1"><br>
+            <input type="checkbox" name="check" value="k2" checked><br>
+            <input type="checkbox" name="check" value="k3"><br>
+            <input type="checkbox" name="check" value="k4"><br>
+
+            tekstarea:<br> <textarea rows="3" cols="30" name="tkstarea">default text in area</textarea><br>
+            dropdownlist:<br> 
+            <select name="ddl">
+                <option>Optie 1</option>
+                <option>Optie 2</option>
+                <option>Optie 3</option>
+                <option>Optie 4</option>
+            </select>
+
+            <button onclick="alert('Hello World!')" type="button">Klik op mij!!!</button>
+        </form>
+        <br>
+
+
+
+
+
+
+
+
+
+
+
+        <!--footer = voettekst, altijd onderaan de pagina-->
+        <footer>
+            Auteur: Anthony<br>
+            <a href="mailto:anthony.coppens@thomasmore.be">anthony.coppens@thomasmore.be</a>
+        </footer>
+
+
+        
+
+
+
+
+
+
+    </body>
+</html>
