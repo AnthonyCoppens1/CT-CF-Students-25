@@ -2,31 +2,37 @@
 <html>
     <head>
         <title>This is the title of this page</title>
+        <link href="stylesheet.css" rel="stylesheet" type="text/css">
 
-        <!--intenal styling-->
+        <!--internal styling-->
         <style>
-            a{
-                text-align: center;
-                color:cyan;
-                background-color: darkolivegreen;
-                padding: 5px;
-            }
-
             .xyz{
                 text-align: center;
                 color: beige;
                 background-color: black;
             }
 
-            
+            p.winter{
+                color:blue;
+            }
+
+            p#summer{
+                color:rgba(187, 132, 29, 0.406)
+            }
         </style>
 
     </head>
-    <body style="background-color: purple; color: turquoise;">
+    <body style="background-color:purple; color: turquoise;">
+
+        <p>It's autumn</p>
+        <p class="winter">It's winter</p>
+        <p>It's spring</p>
+        <p id="summer">It's summer</p>
+
 
         <!-- if you want to have a size scale of your screen, vw is viewport-->
         <!--1 vw = 1% of your screen, so if it's 50cm, 1 vw is 0.5cm-->
-        <h1 style="font-size: 10vw;">Hello World!</h1>
+        <h1 class="winter" style="font-size: 10vw; text-shadow: 10px 20px red;">Hello World!</h1>
 
         
         <!--normally this goes at the end of week 1, but put here for convenience-->
@@ -79,7 +85,7 @@
         <!--linking to different files-->
         <!--target="_blank" opens the file or whatever in a new tab-->
         <a href="text.html" target="_blank">Needs text to be able to click on this</a><br>
-        <a href="pizza.jpg" target="_blank">Click here for tasty pizza</a><br>
+        <a href="../images/jpg/pizza.jpg" target="_blank">Click here for tasty pizza</a><br>
         <a href="mailto:anthony.coppens@thomasmore.be">mail me!</a><br>
         
         <!--opening up a different website-->

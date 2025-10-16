@@ -1,0 +1,35 @@
+body{
+    /*background-color: yellow;
+    background-image: url("../images/jpg/pizza.jpg");
+    background-size: 25%;
+    background-repeat: no-repeat;*/
+
+    background: linear-gradient(salmon, rebeccapurple, black);
+    border: 10px;
+    border-style: dashed;
+    border-width: 5px;
+    border-radius: 5px;
+
+
+}
+
+p{
+    color:red;
+    font-weight: bold;
+}
+
+/*grouping elements together for styling*/
+
+h1, h2, h3, h4, h5, h6{
+    text-align: center;
+    color: greenyellow;
+}
+
+
+a:link, a:visited{
+    color: green
+}
+
+a:hover, a:active{
+    background-color: aquamarine;
+}

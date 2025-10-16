@@ -1,0 +1,32 @@
+<html>
+    <head>
+        <link href="stylesheet.css" type="text/css" rel="stylesheet">
+        <script src="script.js"></script>
+    </head>
+    <body onload="BerichtVanDeDag()">
+        <p id="bericht"></p><br>
+
+        <p id="hallo">Dit is wat tekst!</p>
+        <p>Beetje meer tekst om te zien wat er gebeurt!</p>
+        <button type="button" onclick="helloWorld()">Klik op mij!</button>
+
+        <br><button type="button" onclick="darkLight()">Donker of licht?</button>
+        <br><br>
+
+        naam: <input type="text" id="naam"><br>
+        wachtwoord: <input type="password" id="pwoord" name="wachtwoord"><br>
+        <button type="button" onclick="inhoudOpslaanEnPrinten()">TOON!</button>
+        <p id="output"></p>
+
+        <br><br><img src="plop.jpg" id="plop" onmouseover="invertKleur()" onmouseout="normaalKleur()"  height="50%" width="50%">
+        <br><br><br>
+        <input type="number" id="input"><br>
+        <button type="button" onclick="forLoop()">SOM!</button>
+        <p id="outputSom"></p>
+
+        <br><button type="button" onclick="datum()">VANDAAG</button>
+        <p id="datum"></p><br>
+
+
+    </body>
+</html>

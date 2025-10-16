@@ -1,0 +1,41 @@
+body{
+    font-family: "Skranji", system-ui;
+    font-weight: 400;
+}
+
+div{
+    display: flex;
+    flex-direction: column;
+    text-align: center; /*tekst komt gecentreerd*/
+    align-items: center; /*volledige items gecentreerd (tekst kan nog links staan in bv venster in midden van scherm*/
+    gap: 10px;
+    margin-top: 100px;
+}
+
+input{
+    height: 75px;
+    width: 125px;
+    font-size: large;
+    text-align: center;
+}
+
+button{
+    padding: 10px 20px;
+    background-color:darkslateblue;
+    color: white;
+    border: none;
+    border-radius: 4px;
+}
+
+
+.skranji-regular {
+  font-family: "Skranji", system-ui;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.skranji-bold {
+  font-family: "Skranji", system-ui;
+  font-weight: 700;
+  font-style: normal;
+}
