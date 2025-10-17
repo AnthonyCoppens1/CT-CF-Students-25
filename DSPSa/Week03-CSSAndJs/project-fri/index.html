@@ -1,0 +1,32 @@
+<html>
+    <head>
+        <link href="style.css" type="text/css" rel="stylesheet">
+        <script src="script.js"></script>
+    </head>
+    <body onload="picture()">
+        <p id="hello">This is a test</p>
+        <p>Some more text to see what happens</p>
+        <p>EVEN MORE</p>
+
+        <button type="button" onclick="helloWorld()">CLICK ME!</button><br><br>
+
+        <button type="button" onclick="darkMode()">DARK OR LIGHT??</button><br><br>
+
+        Name: <input type="text" id="name"><br>
+        Password: <input type="password" id="pw"><br>
+        <button type="button" onclick="saveAndPrint()">SHOW ME THE PASSWORD BABY</button>
+        <p id="output"></p><br>
+
+        <img src="shrek.jpg" id="shrek" onmouseover="colorInvert()" onmouseout="colorNormal()" height="100%" width="75%">
+        
+        <br><button type="button" onclick="forLoop()">SUM</button>
+        <p id="sum"></p>
+
+        <input type="number" id="input"><br>
+
+        <br><br> <button type="button" onclick="date()">TODAY!!!</button>
+        <p id="today"></p>
+
+        <img id="picture" height="50%" width="50%">
+    </body>
+</html>
