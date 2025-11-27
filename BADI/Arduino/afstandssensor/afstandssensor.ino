@@ -1,8 +1,8 @@
-long distance;
-long duration;
+long afstand;
+long tijd;
 
-#define trigger 10
-#define echo 9
+#define trigger 10 //trigger die een signaal uitstuurt
+#define echo 9 //echo die het signaal opvangt + zelfde als: const in echo = 9;
 
 void setup() {
   // put your setup code here, to run once:
@@ -19,17 +19,12 @@ void loop() {
   delayMicroseconds(10);
   digitalWrite(trigger, LOW);
 
-  duration = pulseIn(echo, HIGH);
-  distance = (duration/2) / 29.4;
-  Serial.print(distance);
+  tijd = pulseIn(echo, HIGH);
+  afstand = ((tijd / 2) / 29.4);
+
+  Serial.print(afstand);
   Serial.println("cm");
 
-
-
-
-
-
-
-
+  delay(200);
 
 }
